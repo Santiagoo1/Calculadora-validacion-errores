@@ -8,32 +8,75 @@ namespace Calculadora_validacion
 {
     internal class Calculadora
     {
-         
+
         double n1;
         double n2;
 
-        
+
         public double N1 { get => n1; set => n1 = value; }
         public double N2 { get => n2; set => n2 = value; }
-
-
-   
-        public double Suma()
         {
-            double sumar = this.N1 + this.N2;
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   }
+    public double Suma()
+        {
+            string sumar = this.Numero1 + this.N2;
             return (sumar);
         }
 
         public double Resta()
         {
-            double Resta = this.N1 - this.N2;
+            double Resta = this.N3 - this.N2;
             return (Resta);
         }
 
 
         public double Division()
         {
-            double Dividir = this.N1 / this.N2;
+            double Dividir = this.Hola / this.N2;
             return (Dividir);
         }
 
@@ -41,7 +84,7 @@ namespace Calculadora_validacion
 
         public double Multiplicacion()
         {
-            double resultado = this.n1 * this.n2;
+            double resultado = this.n1 * this.l2;
             return (resultado);
         }
     }

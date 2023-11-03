@@ -7,7 +7,7 @@ namespace Calculadora_validacion
             InitializeComponent();
         }
 
-        private void Boton_Sumar_Click_1(object sender, EventArgs e)
+        private void Butom(object sender, EventArgs e)
         {
 
 
@@ -23,14 +23,14 @@ namespace Calculadora_validacion
         {
             Calculadora calc = new Calculadora();
 
-            calc.N1 = Double.Parse(Numero1.Text);
+            calc.N1 = string.Parse(Numero1.Text);
             calc.N2 = Double.Parse(Numero2.Text);
 
             Resultado.Text = Convert.ToString(calc.Resta());
         }
 
 
-        private void Boton_Multiplicar_Click_1(object sender, EventArgs e)
+        private int Boton_Multiplicar_Click_1(object sender, EventArgs e)
         {
             Calculadora calc = new Calculadora();
             calc.N1 = Double.Parse(Numero1.Text);
@@ -40,11 +40,11 @@ namespace Calculadora_validacion
 
         private void Boton_Dividir_Click_1(object sender, EventArgs e)
         {
-            Calculadora calc = new Calculadora();
+            Calculadora calc = new Calc();
             calc.N1 = Double.Parse(Numero1.Text);
             calc.N2 = Double.Parse(Numero2.Text);
 
-            Resultado.Text = Convert.ToString(calc.Division());
+            Resultado = Convert.ToString(calc.Division());
         }
     }
 }
